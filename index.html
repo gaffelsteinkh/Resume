@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Morten Anholt Huvestad — CV</title>
+<meta name="description" content="CV for Morten Anholt Huvestad, Stokke i Vestfold. Gårdsdrift, maskiner og vedlikehold siden 2010. Ingeniørfag fra USN, C#/.NET og databaser ved Kodehode.">
+<meta name="theme-color" content="#E9E4D6">
+<meta property="og:title" content="Morten Anholt Huvestad — CV">
+<meta property="og:description" content="Jeg har laget og fikset ting så lenge jeg kan huske, fra treverk til metall til kode. Nå søker jeg en teknisk stilling, med fagbrev som mål.">
+<meta property="og:type" content="profile">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">CV — oppdatert 2026</p>
+    <h1>Morten Anholt <br>Huvestad</h1>
+
+    <!-- Statuslinja finnes i to utgaver av samme innhold.
+
+         .tagline-static er én fast linje. Den er usynlig på skjermen, men
+         den blir lest av skjermlesere, og den er den ENESTE som vises ved
+         utskrift og for besøkende som har bedt om redusert bevegelse.
+         Derfor kan aldri en halvskrevet kommando havne i PDF-en.
+
+         .tagline-live er den animerte. Den er skjult for skjermlesere med
+         aria-hidden, slik at ingen får lest opp en tekst som endrer seg
+         hvert femte sekund. -->
+    <p class="tagline tagline-static">$ uptime — oppe siden 2010, ingen planlagt nedetid</p>
+
+    <p class="tagline tagline-live" aria-hidden="true">
+      <span class="status-row"><span class="prompt">$</span><span id="status-cmd"></span><span class="cursor">▌</span></span>
+      <span class="status-out" id="status-out"></span>
+    </p>
+
+    <!-- Kontaktinfo står som <span>, ikke <a>. Adressen finnes ingen steder
+         i kildekoden i sammensatt form — script.js setter den sammen først
+         når et menneske klikker. Se kommentaren i script.js. -->
+    <ul class="contact-row">
+      <li><span class="contact" data-contact="epost">Morten.Huvestad at Yahoo dot com</span></li>
+      <li><span class="contact" data-contact="tlf">+47 958 31 225</span></li>
+      <li>Stokke, Vestfold</li>
+    </ul>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section id="profil" class="section">
+    <h2 class="eyebrow">Profil</h2>
+    <p class="lede">
+      Jeg har laget og fikset ting så lenge jeg kan huske, fra treverk til metall til motorer.
+    </p>
+    <p class="lede">
+      Siden 2010 har jeg drevet gården hjemme ved siden av jobb og studier. 160 mål jord,
+      180 mål skog, og en maskinpark jeg holder i gang selv.
+    </p>
+    <p class="lede">
+      Feilsøking er den samme jobben uansett materiale, enten det er en dynamo som ikke lader
+      eller kode som ikke gjør det den skal. Trenger jeg en del som ikke finnes, tegner jeg
+      den og printer den.
+    </p>
+    <p class="lede">
+      Det jeg vil jobbe med er å få teorien ut i den virkelige verden, sammen med folk som
+      bygger noe.
+    </p>
+    <p class="target">Søker: <strong>Teknisk stilling &middot; fagbrev som mål</strong></p>
+    <p class="target">Tilgjengelig: <strong>Kan begynne umiddelbart</strong></p>
+  </section>
+
+  <section id="kompetanse" class="section">
+    <p class="eyebrow">Verktøybelte</p>
+    <h2>Ferdigheter</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3>Mekanikk og håndverk</h3>
+        <div class="tags">
+          <span class="tag">Feilsøking, mekanisk og elektrisk</span>
+          <span class="tag">Vedlikehold</span>
+          <span class="tag">Motor &amp; drivverk</span>
+          <span class="tag">Bremser &amp; understell</span>
+          <span class="tag">Hydraulikk</span>
+          <span class="tag">Restaurering</span>
+          <span class="tag">Trearbeid</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Konstruksjon</h3>
+        <div class="tags">
+          <span class="tag">Teknisk tegning</span>
+          <span class="tag">DAK / 3D-modellering</span>
+          <span class="tag">3D-print</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3>Data</h3>
+        <div class="tags">
+          <span class="tag">C# &amp; ASP.NET</span>
+          <span class="tag">SQL &amp; SQLite</span>
+          <span class="tag">HTML &amp; CSS</span>
+          <span class="tag">Git / GitHub</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Microsoft 365</span>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="prosjekter" class="section">
+    <p class="eyebrow">Bygget</p>
+    <h2>Prosjekter</h2>
+    <ul class="projects">
+
+      <li class="project">
+        <h3>Polaris Sportsman 850 — bygget opp fra bunnen, 2022</h3>
+        <p>
+          Kjøpt billig og tatt helt fra hverandre, ned til motoren i ramma. Sveiset nye fester til
+          bakre differensial og byttet så godt som alle foringer. Dokumentert med bilder og video
+          underveis.
+        </p>
+      </li>
+
+      <li class="project">
+        <h3>Fordson Dexta — restaurering, 2025</h3>
+        <p>
+          Traktor fra 1960-tallet, ute i 15 år. Nytt ledningsnett, nye pakninger og slanger, og
+          drivstoffsystemet gjennomgått. Lakken står urørt med vilje. Tilbake i drift, og valgt
+          framfor hovedtraktoren fordi dieselforbruket er en brøkdel.
+        </p>
+      </li>
+
+      <li class="project">
+        <h3>Gamle økser og kniver</h3>
+        <p>
+          Jeg sliper mine egne økser og kniver, og trives med både metall og treverk. En gammel
+          klyveøks har fått nytt skaft, og en samekniv jeg husker fra barndommen er satt i stand
+          igjen. Med en av øksene har jeg til og med barbert meg.
+        </p>
+      </li>
+
+      <li class="project">
+        <h3>Andre etasje i låven</h3>
+        <p>
+          Bygget på en 12 meters jerndrager, med bjelkelag av 2x8 på fem meter og 30 cm
+          senteravstand. Den er laget for å stå. Under halve etasjen bygde jeg et isolert rom,
+          som noen venner nå bruker som musikkrom.
+        </p>
+      </li>
+
+      <li class="project">
+        <h3>PC-bygging og vannkjøling</h3>
+        <p>
+          Bygget stasjonære maskiner i mange år, og hjulpet venner med sine. To av mine egne har
+          hatt egendesignet vannkjøling. Den minste var på størrelse med en skoeske, med
+          mini-ITX-hovedkort og 280 mm radiator.
+        </p>
+      </li>
+
+      <li class="project">
+        <h3>Vedlikeholdslogg for gård og kjøretøy</h3>
+        <p>
+          Tavla med post-it-lapper for gårdsarbeidet ble for liten, så jeg begynte på en digital
+          versjon. Backenden er skrevet i C# med SQLite, og neste steg er en mobilapp.
+        </p>
+      </li>
+
+    </ul>
+  </section>
+
+  <section id="logg" class="section">
+    <p class="eyebrow">Karriere</p>
+    <h2>Logg</h2>
+
+    <h3 class="log-group">Pågår nå</h3>
+    <ol class="log">
+
+      <li class="log-entry is-active">
+        <div class="log-meta">
+          <span class="log-date">2010–d.d.</span>
+          <span class="log-tag">erfaring</span>
+        </div>
+        <div class="log-body">
+          <h4>Gårdsbruk, Stokke — driftsansvarlig</h4>
+          <p>Jord, skog og to driftsbygninger. Korndrift med våronn i sesongen, brøyting om vinteren, og ved med klyver og fliskutter. Maskinparken holder jeg i gang selv, året rundt.</p>
+        </div>
+      </li>
+
+      <li class="log-entry is-active">
+        <div class="log-meta">
+          <span class="log-date">2026–2027</span>
+          <span class="log-tag">utdanning</span>
+        </div>
+        <div class="log-body">
+          <h4>Kodehode Sandefjord — Programutvikling</h4>
+          <p>Intensivt kodekurs i backend, databaser og webutvikling, med C# som hovedspråk.</p>
+        </div>
+      </li>
+
+      <li class="log-entry is-active">
+        <div class="log-meta">
+          <span class="log-date">2026–d.d.</span>
+          <span class="log-tag">verv</span>
+        </div>
+        <div class="log-body">
+          <h4>Tillitsvalgt — Kodehode Sandefjord</h4>
+          <p>Bindeledd mellom studenter og veiledere. Valgt av kullet.</p>
+        </div>
+      </li>
+
+    </ol>
+
+    <h3 class="log-group">Tidligere</h3>
+    <ol class="log">
+
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-date">2017–2024</span>
+          <span class="log-tag">erfaring</span>
+        </div>
+        <div class="log-body">
+          <h4>Vestfold Landbrukstjenester — innleid</h4>
+          <p>Traktorsjåfør hos skiftende oppdragsgivere, blant annet i ertesesongen for Findus. Rydding for hogst og generelt vedlikehold.</p>
+        </div>
+      </li>
+
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-date">2023</span>
+          <span class="log-tag">erfaring</span>
+        </div>
+        <div class="log-body">
+          <h4>USBL Horten — hjelpearbeider (anleggsgartner)</h4>
+          <p>Klipp av gress og hekk på rundt 20 anlegg. Den store zero turn-klipperen skulle på verksted, men jeg feilsøkte meg fram til feilen og fikk den i drift samme dag.</p>
+        </div>
+      </li>
+
+      <li class="log-entry is-semi-active">
+        <div class="log-meta">
+          <span class="log-date">2021–2022</span>
+          <span class="log-tag">utdanning</span>
+        </div>
+        <div class="log-body">
+          <h4>USN Bakkenteigen — Maskiningeniør (produktutvikling), påbegynt</h4>
+          <p>Teknisk tegning og 3D-modellering (DAK 1 og 2), statikk og fasthetslære, materialteknikk, kvalitet og sikkerhet.</p>
+        </div>
+      </li>
+
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-date">2020–2021</span>
+          <span class="log-tag">erfaring</span>
+        </div>
+        <div class="log-body">
+          <h4>Mikkelsen &amp; Mikkelsen — grunnarbeider (vei- og anleggsarbeid)</h4>
+          <p>Grøftearbeid på fiberutbygging. Kjørte gravemaskin og hjullaster noen timer. Digitaliserte dokumentasjonen på maskinparken, og organiserte verkstedet med faste plasser og merking. Systemet er i stor grad fortsatt der, fem år etter.</p>
+        </div>
+      </li>
+
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-date">2019–2020</span>
+          <span class="log-tag">utdanning</span>
+        </div>
+        <div class="log-body">
+          <h4>USN Kongsberg — Forkurs for ingeniørutdanning, fullført</h4>
+          <p>Matematikk, fysikk, norsk og kommunikasjon, teknologi og samfunn. Gir opptaksgrunnlag til ingeniørstudier.</p>
+        </div>
+      </li>
+
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-date">2015</span>
+          <span class="log-tag">erfaring</span>
+        </div>
+        <div class="log-body">
+          <h4>Matbørsen — produksjonsmedarbeider</h4>
+          <p>Produksjonslinje i kjøttindustrien.</p>
+        </div>
+      </li>
+
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-date">2015</span>
+          <span class="log-tag">erfaring</span>
+        </div>
+        <div class="log-body">
+          <h4>Komplett Arena — vaktmestervikar</h4>
+          <p>Drift og vedlikehold av bygg og uteområder.</p>
+        </div>
+      </li>
+
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-date">2012–2013</span>
+          <span class="log-tag">erfaring</span>
+        </div>
+        <div class="log-body">
+          <h4>Omsorgslønn / BPA</h4>
+          <p>Praktisk bistand og oppfølging i hjemmet.</p>
+        </div>
+      </li>
+
+      <li class="log-entry">
+        <div class="log-meta">
+          <span class="log-date">2010–2013</span>
+          <span class="log-tag">utdanning</span>
+        </div>
+        <div class="log-body">
+          <h4>Gjennestad videregående skole</h4>
+          <p>Salg, service og sikkerhet, med regnskap. Generell studiekompetanse.</p>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <section id="annet" class="section">
+    <div class="split">
+    <div>
+      <h3 class="eyebrow">Språk</h3>
+      <div class="tags">
+        <span class="tag">Norsk — morsmål</span>
+        <span class="tag">Engelsk — flytende</span>
+        <span class="tag">Tysk — god</span>
+      </div>
+    </div>
+    <div>
+      <h3 class="eyebrow">Sertifikater og førerkort</h3>
+      <div class="tags">
+        <span class="tag">HMS-kurs for landbruket</span>
+        <span class="tag">Klasse B</span>
+        <span class="tag">Klasse BE</span>
+        <span class="tag">Klasse T</span>
+      </div>
+    </div>
+    </div>
+
+    <div class="interests">
+      <h3 class="eyebrow">Interesser</h3>
+      <div class="tags tags-sm">
+        <span class="tag">Praktisk fysikk</span>
+        <span class="tag">Mekanismer &amp; urverk</span>
+        <span class="tag">Elektronikk &amp; automasjon</span>
+        <span class="tag">Energi &amp; effektivisering</span>
+        <span class="tag">KI som verktøy</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="referanser" class="section">
+    <p class="referanser">Referanser oppgis etter forespørsel.</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p>Morten Anholt Huvestad · <span class="contact" data-contact="epost">Morten.Huvestad at Yahoo dot com</span> · <span class="contact" data-contact="tlf">+47 958 31 225</span></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
